@@ -123,6 +123,8 @@ def log_aggregation():
             .execute_insert(aggregated_sink_table) \
             .wait()
 
+
+
     except Exception as e:
         print("Writing records from Kafka to JDBC failed:", str(e))
 
